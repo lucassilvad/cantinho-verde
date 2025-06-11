@@ -1,6 +1,7 @@
 body {
   background: var(--color-p1);
   margin: 0;
+  height: 8000px;
 }
 
 img {

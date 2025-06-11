@@ -31,8 +31,18 @@
     font-size: 2rem;
   }
 
-  .font-1-xl,
-  .font-2-xl {
+  .font-1-xl {
     font-size: 1.5rem;
+  }
+
+  .font-2-m {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-1-xxl {
+    font-size: 1.75rem;
+    line-height: 1.3;
   }
 }

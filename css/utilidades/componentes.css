@@ -5,15 +5,16 @@
 }
 
 .btn-1 {
-  font-family: "Roboto";
-  font-size: 1.125rem;
-  font-weight: 400;
   text-transform: uppercase;
   padding: 12px 16px;
   border-radius: 8px;
   color: var(--color-p7);
-  transition: 0.3s;
   border: 2px solid #73b837;
+  transition: 0.3s;
+}
+
+.btn-1:hover {
+  background: var(--color-p4);
 }
 
 .btn-2 {
@@ -23,4 +24,10 @@
   text-transform: uppercase;
   padding: 12px 16px;
   border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+  .btn-1 {
+    padding: 8px 12px;
+  }
 }

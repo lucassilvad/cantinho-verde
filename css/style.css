@@ -3,12 +3,12 @@
 @import "./global/global.css";
 @import "./global/header.css";
 
-/* Home */
-
-@import "./introducao.css";
-
 /* Utilidades */
 
 @import "./utilidades/componentes.css";
 @import "./utilidades/cores.css";
 @import "./utilidades/tipografia.css";
+
+/* Home */
+
+@import "./introducao.css";
