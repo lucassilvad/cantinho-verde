@@ -10,6 +10,10 @@
   font: 400 3rem/1.25 "Playfair", serif;
 }
 
+.font-2-xl {
+  font: 400 2.5rem/1.2 "Roboto", sans-serif;
+}
+
 .font-2-l {
   font: 400 1.5rem/1.5 "Roboto", sans-serif;
 }
@@ -39,7 +43,14 @@
   }
 
   .font-1-xl {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .font-2-xl {
+    font-size: 1.25rem;
+  }
+
+  .font-1-l {
+    font-size: 2rem;
   }
 
   .font-2-m {

@@ -1,0 +1,61 @@
+.jardinagem-bg {
+  background: var(--color-s4);
+}
+
+.jardinagem {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.jardinagem h2 {
+  text-align: right;
+  max-width: 20ch;
+  justify-self: end;
+  margin-bottom: 80px;
+}
+
+.jardinagem > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 500px;
+  margin-bottom: 80px;
+}
+
+.jardinagem ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 40px;
+  margin-bottom: 120px;
+}
+
+.jardinagem li img {
+  border-radius: 20px;
+}
+
+.jardinagem a {
+  display: block;
+  justify-self: center;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .jardinagem {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .jardinagem ul {
+    gap: 40px 20px;
+    margin-bottom: 60px;
+  }
+
+  .jardinagem a {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .jardinagem ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
