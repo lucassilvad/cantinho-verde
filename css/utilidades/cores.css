@@ -8,10 +8,10 @@
   --color-p7: #3c5d1f;
   --color-p8: #274012;
   --color-p9: #20360d;
-  --color-p10: #535b4b;
-  --color-p11: #0c2607;
-  --color-p12: #091f05;
-  --color-p13: #101c0e;
+  --color-p10: #0c2607;
+  --color-p11: #9ea894;
+  --color-p12: #535b4b;
+  --color-p13: #12250f;
   --color-p14: #091208;
   --color-s1: #c4b893;
   --color-s2: #5c4d1f;
@@ -50,11 +50,15 @@
   color: #0c2607;
 }
 .color-p11 {
-  color: #101c0e;
+  color: #9ea894;
 }
 .color-p12 {
-  color: #091f05;
+  color: #535b4b;
 }
+.color-p13 {
+  color: #101c0e;
+}
+
 .color-s1 {
   color: #c4b893;
 }
