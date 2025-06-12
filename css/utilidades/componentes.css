@@ -2,6 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .btn-1 {
@@ -24,6 +25,25 @@
   text-transform: uppercase;
   padding: 12px 16px;
   border-radius: 20px;
+}
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: var(--color-p11);
+  left: 0;
+  bottom: 4px;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 800px) {

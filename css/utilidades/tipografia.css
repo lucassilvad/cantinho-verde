@@ -26,13 +26,20 @@
   font: 400 1rem/1.5 "Roboto", sans-serif;
 }
 
+@media (max-width: 1224px) {
+  .plantas-destaque ul {
+    font-size: 0.75rem;
+    line-height: 1.35;
+  }
+}
+
 @media (max-width: 800px) {
-  .font-1-xxl {
+  .intro h1.font-1-xxl {
     font-size: 2rem;
   }
 
   .font-1-xl {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .font-2-m {

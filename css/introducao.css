@@ -4,13 +4,20 @@
       no-repeat top 60px right -400px,
     url("../img/decoracao/home-background/deco-intro-top-left.svg") no-repeat
       top -40px left -350px;
-  height: 1000px;
 }
 
 .intro {
-  padding-bottom: 200px;
+  padding-bottom: 400px;
 }
 
 .intro h1 {
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .home-bg {
+    background: url("../img/decoracao/home-background/deco-intro-bottom-left.svg")
+        no-repeat top 60px right -400px,
+      none;
+  }
 }
