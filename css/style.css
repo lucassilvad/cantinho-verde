@@ -15,3 +15,7 @@
 @import "./introducao.css";
 @import "./plantas-destaque.css";
 @import "./jardinagem.css";
+
+/* Sobre */
+
+@import "./sobre.css";

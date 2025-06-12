@@ -9,6 +9,10 @@ img {
   height: auto;
 }
 
+h1:first-child {
+  text-align: center;
+}
+
 h1,
 h2,
 h3,

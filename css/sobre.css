@@ -1,0 +1,73 @@
+.sobre-bg {
+  background: url("../img/decoracao/sobre-background/deco-sobre-top-left.svg")
+      no-repeat top -20px left -150px,
+    url("../img/decoracao/sobre-background/deco-sobre-top-right.svg") no-repeat
+      top 40px right -250px;
+  padding-bottom: 120px;
+}
+
+.sobre h1 {
+  position: relative;
+  padding-bottom: 600px;
+}
+
+.sobre h1::after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background: var(--color-p3);
+  justify-self: center;
+  margin-top: 40px;
+}
+
+.sobre-conteudo h2 {
+  max-width: 20ch;
+  margin-bottom: 32px;
+}
+
+.sobre-conteudo p + h2,
+.sobre-conteudo ul + h2 {
+  margin-top: 80px;
+}
+
+.sobre-conteudo p + p {
+  margin-top: 40px;
+}
+
+.sobre-conteudo p + h3 {
+  margin-top: 48px;
+  margin-bottom: 28px;
+}
+
+.sobre-conteudo h3,
+.sobre-conteudo strong {
+  color: var(--color-p10);
+  font-weight: 500;
+}
+
+.sobre-conteudo h3 {
+  font-weight: 600;
+}
+
+.sobre-conteudo li + li {
+  margin-top: 20px;
+}
+
+@media (max-width: 980px) {
+  .sobre-bg {
+    background: url("../img/decoracao/sobre-background/deco-sobre-top-right.svg")
+      no-repeat top 40px right -250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre h1::after {
+    display: none;
+  }
+
+  .sobre-conteudo p + h2,
+  .sobre-conteudo ul + h2 {
+    margin-top: 36px;
+  }
+}
