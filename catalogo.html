@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cantinho Verde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="catalogo">
+  <header class="header container">
+    <div class="header-menu">
+      <a href="./"> <img src="./img/marca.svg" alt="Cantinho Verde" width="424" height="60"></a>
+      <a class="font-2-m btn-1" href="./orcamento.html">Solicitar Orçamento</a>
+    </div>
+    <nav class="header-nav" aria-label="primaria">
+      <ul class="font-1-m color-11">
+        <li><a class="link" href="./sobre.html">Sobre Nós</a></li>
+        <li><a class="link" href="./catalogo.html">Catálogo</a></li>
+        <li><a class="link" href="./blog.html">Nosso Blog</a></li>
+        <li><a class="link" href="./contato.html">Contato</a></li>
+        <li><a class="link" href="./localizacao.html">Localização</a></li>
+      </ul>
+      <img src="./img/decoracao/nav-principal/nav-primaria-bg.svg" alt="">
+    </nav>
+  </header>
+
+  <div class="catalogo-bg">
+    <article class="container catalogo">
+      <h1 class="font-1-xxl color-p13">Catálogo</h1>
+      <div class="catalogo-conteudo">
+        <div class="filtros-catalogo">
+
+          <label class="font-2-m color-p8" for="tipo">Tipo</label>
+          <select class="font-2-m color-p7" name="tipo" id="tipo">
+            <option value="">Selecione um tipo</option>
+            <option value="ornamental">Ornamental</option>
+            <option value="frutiferas">Frutíferas</option>
+            <option value="hortalicas">Hortaliças</option>
+            <option value="temperos">Temperos</option>
+          </select>
+
+
+          <label for="categoria">Categoria</label>
+          <select class="font-2-m color-p8" name="categoria" id="categoria">
+            <option value="">Selecione uma categoria</option>
+            <option value="flor">Flor</option>
+            <option value="folhagem">Folhagem</option>
+            <option value="suculenta">Suculenta</option>
+          </select>
+
+          <button class="link font-1-m">Aplicar filtros</button>
+        </div>
+        <ul>
+          <a href="./orcamento.html">
+            <li data-categoria="ornamental">
+              <img src="./img/fotos/catalogo/flor-ornamental-1.jpg" alt="">
+              <p class="font-2-m color-p8">Flor</p>
+              <span class="etiqueta font-2-xs color-11">Ornamental</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="ornamental">
+              <img src="./img/fotos/catalogo/folhagem-ornamental-1.jpg" alt="">
+              <p class="font-2-m color-p8">Flor</p>
+              <span class="etiqueta font-2-xs color-11">Ornamental</span>
+
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="ornamental">
+              <img src="./img/fotos/catalogo/suculenta-ornamental-1.jpg" alt="">
+              <p class="font-2-m color-p8">Flor</p>
+              <span class="etiqueta font-2-xs color-11">Ornamental</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="ornamental">
+              <img src="./img/fotos/catalogo/flor-ornamental-2.jpg" alt="">
+              <p class="font-2-m color-p8">Flor</p>
+              <span class="etiqueta font-2-xs color-11">Ornamental</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="ornamental">
+              <img src="./img/fotos/catalogo/folhagem-ornamental-2.jpg" alt="">
+              <p class="font-2-m color-p8">Flor</p>
+              <span class="etiqueta font-2-xs color-11">Ornamental</span>
+
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="ornamental">
+              <img src="./img/fotos/catalogo/suculenta-ornamental-2.jpg" alt="">
+              <p class="font-2-m color-p8">Flor</p>
+              <span class="etiqueta font-2-xs color-11">Ornamental</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="frutiferas">
+              <img src="./img/fotos/catalogo/frutiferas-1.jpg" alt="">
+              <p class="font-2-m color-p8">Frutíferas</p>
+              <span class="etiqueta font-2-xs color-11">Frutíferas</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="frutiferas">
+              <img src="./img/fotos/catalogo/frutiferas-2.jpg" alt="">
+              <p class="font-2-m color-p8">Frutíferas</p>
+              <span class="etiqueta font-2-xs color-11">Frutíferas</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="frutiferas">
+              <img src="./img/fotos/catalogo/frutiferas-3.jpg" alt="">
+              <p class="font-2-m color-p8">Frutíferas</p>
+              <span class="etiqueta font-2-xs color-11">Frutíferas</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="frutiferas">
+              <img src="./img/fotos/catalogo/frutiferas-4.jpg" alt="">
+              <p class="font-2-m color-p8">Frutíferas</p>
+              <span class="etiqueta font-2-xs color-11">Frutíferas</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="frutiferas">
+              <img src="./img/fotos/catalogo/frutiferas-5.jpg" alt="">
+              <p class="font-2-m color-p8">Frutíferas</p>
+              <span class="etiqueta font-2-xs color-11">Frutíferas</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="frutiferas">
+              <img src="./img/fotos/catalogo/frutiferas-6.jpg" alt="">
+              <p class="font-2-m color-p8">Frutíferas</p>
+              <span class="etiqueta font-2-xs color-11">Frutíferas</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="frutiferas">
+              <img src="./img/fotos/catalogo/frutiferas-7.jpg" alt="">
+              <p class="font-2-m color-p8">Frutíferas</p>
+              <span class="etiqueta font-2-xs color-11">Frutíferas</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="hortalicas">
+              <img src="./img/fotos/catalogo/hortalicas-1.jpg" alt="">
+              <p class="font-2-m color-p8">Hortaliça</p>
+              <span class="etiqueta font-2-xs color-11">Hortaliças</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="hortalicas">
+              <img src="./img/fotos/catalogo/hortalicas-2.jpg" alt="">
+              <p class="font-2-m color-p8">Hortaliça</p>
+              <span class="etiqueta font-2-xs color-11">Hortaliças</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="hortalicas">
+              <img src="./img/fotos/catalogo/hortalicas-3.jpg" alt="">
+              <p class="font-2-m color-p8">Hortaliça</p>
+              <span class="etiqueta font-2-xs color-11">Hortaliças</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="hortalicas">
+              <img src="./img/fotos/catalogo/hortalicas-4.jpg" alt="">
+              <p class="font-2-m color-p8">Hortaliça</p>
+              <span class="etiqueta font-2-xs color-11">Hortaliças</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="hortalicas">
+              <img src="./img/fotos/catalogo/hortalicas-5.jpg" alt="">
+              <p class="font-2-m color-p8">Hortaliça</p>
+              <span class="etiqueta font-2-xs color-11">Hortaliças</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="hortalicas">
+              <img src="./img/fotos/catalogo/temperos-1.jpg" alt="">
+              <p class="font-2-m color-p8">Tempero</p>
+              <span class="etiqueta font-2-xs color-11">Temperos</span>
+            </li>
+          </a>
+          <a href="./orcamento.html">
+            <li data-categoria="temperos">
+              <img src="./img/fotos/catalogo/temperos-2.jpg" alt="">
+              <p class="font-2-m color-p8">Tempero</p>
+              <span class="etiqueta font-2-xs color-11">Temperos</span>
+            </li>
+            <a href="./orcamento.html">
+              <li data-categoria="temperos">
+                <img src="./img/fotos/catalogo/temperos-3.jpg" alt="">
+                <p class="font-2-m color-p8">Tempero</p>
+                <span class="etiqueta font-2-xs color-11">Temperos</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="temperos">
+                <img src="./img/fotos/catalogo/temperos-4.jpg" alt="">
+                <p class="font-2-m color-p8">Tempero</p>
+                <span class="etiqueta font-2-xs color-11">Temperos</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-3.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-4.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-5.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-6.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-7.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-8.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-9.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-10.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-11.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+            <a href="./orcamento.html">
+              <li data-categoria="ornamental">
+                <img src="./img/fotos/catalogo/flor-ornamental-12.jpg" alt="">
+                <p class="font-2-m color-p8">Flor</p>
+                <span class="etiqueta font-2-xs color-11">Ornamental</span>
+              </li>
+            </a>
+        </ul>
+      </div>
+    </article>
+  </div>
+</body>
+
+</html>

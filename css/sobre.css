@@ -7,18 +7,7 @@
 }
 
 .sobre h1 {
-  position: relative;
   padding-bottom: 600px;
-}
-
-.sobre h1::after {
-  content: "";
-  display: block;
-  width: 35%;
-  height: 2px;
-  background: var(--color-p3);
-  justify-self: center;
-  margin-top: 40px;
 }
 
 .sobre-conteudo h2 {

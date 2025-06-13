@@ -10,8 +10,17 @@
   padding-bottom: 400px;
 }
 
-.intro h1 {
+.intro h1,
+.intro p {
   text-align: center;
+}
+
+.intro a {
+  padding-bottom: 4px;
+}
+
+.intro a::after {
+  width: 100%;
 }
 
 @media (max-width: 800px) {

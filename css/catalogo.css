@@ -1,0 +1,101 @@
+.catalogo-bg {
+  padding-bottom: 120px;
+}
+
+.catalogo h1 {
+  padding-bottom: 80px;
+}
+
+.filtros-catalogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  gap: 16px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.filtros-catalogo label {
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  margin-bottom: 8px;
+  top: -20px;
+  pointer-events: none;
+}
+
+.filtros-catalogo select {
+  max-width: 360px;
+  width: 100%;
+  height: 60px;
+  border: 2px solid var(--color-p4);
+  border-radius: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  appearance: none;
+  cursor: pointer;
+  background: var(--color-p1);
+}
+
+.filtros-catalogo button {
+  border: none;
+  background: none;
+  grid-column: 1 / -1;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.catalogo-conteudo ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, max-content));
+  justify-content: center;
+  gap: 40px;
+}
+
+.catalogo-conteudo li {
+  background: var(--color-p2);
+  max-width: 260px;
+  padding: 40px 32px 8px 32px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2px var(--color-p4), 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: relative;
+}
+
+.catalogo-conteudo li:hover {
+  box-shadow: 0 0 0 2px var(--color-p6), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.catalogo-conteudo img {
+  margin-bottom: 8px;
+  border: 2px solid var(--color-p6);
+  border-radius: 4px;
+}
+
+.etiqueta {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 88px;
+  text-align: center;
+  grid-column: 1 / -1;
+  background: linear-gradient(var(--color-s4) 30%, var(--color-p5) 0%);
+  padding: 0 2px;
+  padding-top: 45px;
+  top: 0;
+  right: 48px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 800px) {
+  .catalogo-conteudo ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  }
+}
+
+@media (max-width: 600px) {
+  .filtros-catalogo {
+    grid-template-columns: 1fr;
+  }
+}

@@ -5,13 +5,30 @@
   box-sizing: border-box;
 }
 
+#home h1::after {
+  width: 0;
+}
+
+h1 {
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background: var(--color-p3);
+  justify-self: center;
+  margin-top: 40px;
+}
+
 .btn-1 {
   text-transform: uppercase;
   padding: 12px 16px;
   border-radius: 8px;
   color: var(--color-p7);
   border: 2px solid #73b837;
-  transition: 0.3s;
 }
 
 .btn-1:hover {
