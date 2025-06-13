@@ -29,8 +29,7 @@
   margin-bottom: 28px;
 }
 
-.sobre-conteudo h3,
-.sobre-conteudo strong {
+.sobre-conteudo h3 {
   color: var(--color-p10);
   font-weight: 500;
 }

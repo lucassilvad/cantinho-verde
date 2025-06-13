@@ -1,0 +1,45 @@
+#secao-1 ul + .img-mutavel img {
+  object-position: bottom;
+}
+
+#secao-1 .img-mutavel.last-img img {
+  max-height: 300px;
+}
+
+#secao-1 .img-mutavel img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  align-self: center;
+  max-height: 140px;
+  border-radius: 8px;
+}
+
+/* #secao-1 .img-mutavel:last-child {
+  display: none;
+} */
+
+#secao-1 .blog-secao-conteudo div:nth-child(3) p {
+  margin-bottom: 20px;
+}
+
+#secao-1 .blog-secao-conteudo ul {
+  margin-bottom: 48px;
+}
+
+#secao-1 .blog-secao-conteudo li + li {
+  margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  #secao-1 .img-mutavel {
+    height: max-content;
+  }
+}
+
+@media (max-width: 364px) {
+  .img-mutavel {
+    height: auto;
+  }
+}

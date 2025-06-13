@@ -19,6 +19,10 @@
   padding-bottom: 4px;
 }
 
+.intro a:hover {
+  color: var(--color-p6);
+}
+
 .intro a::after {
   width: 100%;
 }

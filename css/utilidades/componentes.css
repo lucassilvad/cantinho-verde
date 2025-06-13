@@ -40,7 +40,7 @@ h1::after {
   font-size: 1.125rem;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 16px 26px;
+  padding: 12px 24px;
   border-radius: 100px;
   background: #7bd53f;
 }
@@ -68,8 +68,26 @@ h1::after {
   width: 100%;
 }
 
+.col-2 {
+  grid-column: 1 / -1;
+}
+
+strong {
+  color: var(--color-p8);
+  font-weight: 500;
+}
+
+.bold {
+  color: var(--color-p10);
+  font-weight: 600 !important;
+}
+
 @media (max-width: 800px) {
   .btn-1 {
     padding: 8px 12px;
+  }
+
+  .col-2 {
+    grid-column: 1;
   }
 }
