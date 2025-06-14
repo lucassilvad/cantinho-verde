@@ -1,12 +1,8 @@
-.contato-titulo {
-  margin-bottom: 80px;
-}
-
 .form-container {
   padding: 40px 120px;
   border: 2px solid var(--color-s2);
   border-radius: 8px;
-  margin: 0 auto 120px auto;
+  margin: 0 20px;
 }
 
 .form-conteudo h2 {
@@ -115,7 +111,7 @@
 @media (max-width: 800px) {
   .form-container {
     padding: 40px 60px;
-    margin: 0 10px 120px 10px;
+    margin: 0 10px;
   }
 
   .form-info {

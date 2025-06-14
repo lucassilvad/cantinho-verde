@@ -1,11 +1,3 @@
-.catalogo-bg {
-  padding-bottom: 120px;
-}
-
-.catalogo h1 {
-  padding-bottom: 80px;
-}
-
 .filtros-catalogo {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -2,6 +2,11 @@
   background: var(--color-p14);
   padding-top: 120px;
   padding-bottom: 120px;
+  margin-top: 120px;
+}
+
+#home .footer-bg {
+  margin-top: 0;
 }
 
 .footer {
@@ -36,6 +41,7 @@
   .footer-bg {
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-top: 60px;
   }
 }
 

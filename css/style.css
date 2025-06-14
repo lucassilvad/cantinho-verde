@@ -36,3 +36,8 @@
 /* Localização */
 
 @import "./localizacao.css";
+
+/* Acessórios */
+
+@import "./acessorios/acessorios.css";
+@import "./acessorios/acessorio-interno.css";

@@ -6,11 +6,10 @@
   border: 2px solid var(--color-s2);
   border-top: 0;
   border-radius: 0 0 8px 8px;
-  margin-bottom: 120px;
   padding: 40px 80px;
 }
 
-.localizacao-container img {
+.localizacao img {
   border-radius: 8px 8px 0 0;
 }
 
