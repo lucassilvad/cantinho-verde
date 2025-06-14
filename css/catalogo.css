@@ -38,6 +38,12 @@
   background: var(--color-p1);
 }
 
+.filtros-catalogo select:focus {
+  outline: none;
+  border-color: #73b837;
+  box-shadow: 0 0 2px 2px var(--color-p4);
+}
+
 .filtros-catalogo button {
   border: none;
   background: none;

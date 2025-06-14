@@ -6,6 +6,7 @@
   padding: 120px 80px;
   border: 2px solid var(--color-p4);
   border-radius: 8px;
+  margin: 0 20px 120px 20px;
 }
 
 .blog-container {
@@ -109,6 +110,7 @@
 @media (max-width: 800px) {
   .blog-conteudo {
     padding: 40px 20px;
+    margin-bottom: 60px;
   }
 
   .blog-intro,

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cantinho Verde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="sobre">
+  <header class="header container">
+    <div class="header-menu">
+      <a href="./"> <img src="./img/marca.svg" alt="Cantinho Verde" width="424" height="60"></a>
+      <a class="font-2-m btn-1" href="./orcamento.html">Solicitar Orçamento</a>
+    </div>
+    <nav class="header-nav" aria-label="primaria">
+      <ul class="font-1-m color-11">
+        <li><a class="link" href="./sobre.html">Sobre Nós</a></li>
+        <li><a class="link" href="./catalogo.html">Catálogo</a></li>
+        <li><a class="link" href="./blog.html">Nosso Blog</a></li>
+        <li><a class="link" href="./contato.html">Contato</a></li>
+        <li><a class="link" href="./localizacao.html">Localização</a></li>
+      </ul>
+      <img src="./img/decoracao/nav-principal/nav-primaria-bg.svg" alt="">
+    </nav>
+  </header>
+
+
+  <article class="container contato-titulo">
+    <h1 class="font-1-xxl color-p13">Contato</h1>
+  </article>
+
+  <article class="form-container container">
+    <div class="form-conteudo">
+      <div class="form-info">
+        <h2 class="font-1-l color-p7 col-2">Informações</h2>
+        <ul class="font-2-m color-p12">
+          <li>
+            <a class="link" href="mailto:cantinhoverde@contato.com">cantinhoverde@contato.com</a>
+          </li>
+          <li>
+            <a class="link" href="mailto:cantinhoverde@assistencia.com">cantinhoverde@assistencia.com</a>
+          </li>
+          <li>
+            <a class="link" href="tel:+55 61 9999-9999">+55 61 9999-9999</a>
+          </li>
+        </ul>
+
+        <ul class="font-2-m color-p12">
+          <li>Rua das Acácias, Lote 45 -<br> Setor de Mansões Park Way
+          </li>
+          <li>Brasília, DF - CEP: 71745-000</li>
+        </ul>
+      </div>
+      <form class="form" action="./contato.html">
+        <div>
+          <label for="nome">Nome Completo</label>
+          <input type="text" name="nome" id="nome" placeholder="Seu nome completo">
+        </div>
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="text" name="telefone" id="telefone" placeholder="(DDD) 9999-9999">
+        </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="contato@email.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+        </div>
+        <div class="col-2">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" placeholder="O que você precisa?"></textarea>
+        </div>
+        <button class="btn-2 col-2">Enviar mensagem</button>
+      </form>
+    </div>
+  </article>
+
+  <footer class="footer-bg">
+    <div class="container footer font-2-l ">
+      <img src="./img/marca-2.svg" alt="Cantinho Verde" width="424" height="60">
+      <ul class="footer-nav color-p3">
+        <li>
+          <img src="./img/icones/sobre.svg" alt=""><a class="link" href="./sobre.html">Sobre</a>
+        </li>
+        <li>
+          <img src="./img/icones/catalogo.svg" alt=""><a class="link" href="./catalogo.hmtl">Catálogo</a>
+        </li>
+        <li>
+          <img src="./img/icones/blog.svg" alt=""><a class="link" href="./blog.html"> Nosso Blog</a>
+        </li>
+        <li>
+          <img src="./img/icones/contato.svg" alt=""><a class="link" href="./contato.html">Contato</a>
+        </li>
+        <li>
+          <img src="./img/icones/localizacao.svg" alt=""><a class="link" href="./blog.html">Localização</a>
+        </li>
+      </ul>
+      <ul class="footer-meios color-p3">
+        <li>
+          <a class="link" href="mailto:cantinhoverde@contato.com">cantinhoverde@contato.com</a>
+        </li>
+        <li>
+          <a class="link" href="mailto:cantinhoverde@assistencia.com">cantinhoverde@assistencia.com</a>
+        </li>
+        <li>
+          <a class="link" href="tel:+55 61 9999-9999">+55 61 9999-9999</a>
+        </li>
+      </ul>
+      <p class="font-2-s color-p11">Cantinho Verde. © Alguns direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

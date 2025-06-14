@@ -43,6 +43,9 @@ h1::after {
   padding: 12px 24px;
   border-radius: 100px;
   background: #7bd53f;
+  color: #20360d;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-2:hover {
@@ -89,5 +92,11 @@ strong {
 
   .col-2 {
     grid-column: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
   }
 }

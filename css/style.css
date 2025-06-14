@@ -28,3 +28,7 @@
 
 @import "./blog/blog.css";
 @import "./blog/secao-1.css";
+
+/* Formulário */
+
+@import "./form.css";

@@ -25,6 +25,13 @@
   margin-top: 8px;
 }
 
+.footer-redes {
+  display: flex;
+  gap: 32px;
+  grid-column: 2;
+  margin-top: 40px;
+}
+
 @media (max-width: 800px) {
   .footer-bg {
     padding-top: 80px;
