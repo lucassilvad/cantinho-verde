@@ -32,7 +32,7 @@
 
 
   <article class="container contato-titulo">
-    <h1 class="font-1-xxl color-p13">Contato</h1>
+    <h1 class="font-1-xxl color-p13">Solicite seu Orçamento</h1>
   </article>
 
   <article class="form-container container">
@@ -58,23 +58,38 @@
         </ul>
       </div>
       <form class="form" action="./contato.html">
-        <div>
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" placeholder="Seu nome">
+        <div class="col-2">
+          <label for="nome">Nome Completo</label>
+          <input type="text" name="nome" id="nome" placeholder="Seu nome completo">
+        </div>
+
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="contato@email.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
         </div>
         <div>
           <label for="telefone">Telefone</label>
           <input type="text" name="telefone" id="telefone" placeholder="(DDD) 9999-9999">
         </div>
-        <div class="col-2">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="contato@email.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+        <div>
+          <label for="tipo-planta">Tipo de Planta</label>
+          <select name="tipo-planta" id="tipo-planta">
+            <option value="">Selecione um tipo</option>
+            <option value="ornamental">Ornamental</option>
+            <option value="frutifera">Frutífera</option>
+            <option value="horatalicas">Horataliças</option>
+            <option value="ervas">Ervas Aromáticas</option>
+          </select>
         </div>
         <div class="col-2">
-          <label for="mensagem">Mensagem</label>
-          <textarea name="mensagem" id="mensagem" placeholder="O que você precisa?"></textarea>
+          <label for="mensagem">Detalhes da Solicitação</label>
+          <textarea name="mensagem" id="mensagem" placeholder='Ex: "Plantas para uma varanda pequena com sol"'></textarea>
         </div>
-        <button class="btn-2 col-2">Enviar mensagem</button>
+        <div class="col-2">
+          <label for="info-adicional">Informações adicionais <span class="color-p10">(opcional)</span></label>
+          <textarea name="info-adicional" id="info-adicional" "></textarea>
+        </div>
+        <button class=" btn-2 col-2">Solicitar Orçamento</button>
       </form>
     </div>
   </article>
