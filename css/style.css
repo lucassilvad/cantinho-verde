@@ -32,3 +32,7 @@
 /* Formulário */
 
 @import "./form.css";
+
+/* Localização */
+
+@import "./localizacao.css";

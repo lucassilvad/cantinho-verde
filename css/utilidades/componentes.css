@@ -85,13 +85,6 @@ strong {
   font-weight: 600 !important;
 }
 
-@media (max-width: 1250px) {
-  .form-container,
-  .blog-conteudo {
-    margin: 0 20px 120px 20px;
-  }
-}
-
 @media (max-width: 800px) {
   .btn-1 {
     padding: 8px 12px;
