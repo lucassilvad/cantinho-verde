@@ -1,5 +1,6 @@
 body {
-  background: var(--color-p1);
+  /* background: var(--color-p1); */
+  background: #fdfff7;
   margin: 0;
 }
 
