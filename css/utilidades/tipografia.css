@@ -3,7 +3,7 @@
 }
 
 .font-1-xl {
-  font: 700 3.75rem/1.2 "Playfair", serif;
+  font: 700 3.75rem/1 "Playfair", serif;
 }
 
 .font-1-l {
@@ -60,7 +60,9 @@
   .font-1-l {
     font-size: 2rem;
   }
-
+  a.font-1-l {
+    font-size: 2.5rem;
+  }
   .font-1-xm {
     font-size: 1.5rem;
   }

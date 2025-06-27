@@ -31,7 +31,7 @@
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-bottom: 40px;
+  padding-bottom: 16px;
 }
 
 .plantas-destaque ul h3 {
@@ -76,6 +76,14 @@
   text-align: center;
 }
 
+.plantas-destaque a {
+  text-decoration: underline;
+  line-height: 1;
+}
+.plantas-destaque a:hover {
+  color: #73b837;
+}
+
 @media (max-width: 1224px) {
   .plantas-destaque ul {
     gap: 20px;
@@ -115,6 +123,10 @@
 }
 
 @media (max-width: 800px) {
+  .plantas-destaque ul {
+    padding-bottom: 40px;
+  }
+
   .plantas-destaque li:nth-child(2),
   .plantas-destaque li:nth-child(4),
   .plantas-destaque li:nth-child(5) {
