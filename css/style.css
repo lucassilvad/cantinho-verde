@@ -41,3 +41,7 @@
 
 @import "./acessorios/acessorios.css";
 @import "./acessorios/acessorio-interno.css";
+
+/* JavaScript */
+
+@import "./js/javascript.css";

@@ -1,0 +1,12 @@
+.blog-secao {
+  display: none;
+}
+
+.blog-secao.ativo {
+  display: block;
+}
+
+.blog-secoes-nav li.ativo {
+  background: var(--color-p5);
+  color: var(--color-p1);
+}
