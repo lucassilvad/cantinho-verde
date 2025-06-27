@@ -1,12 +1,24 @@
-.blog-secao {
+/* Blog */
+
+.js .blog-secao {
   display: none;
 }
 
-.blog-secao.ativo {
+.js .blog-secao.ativo {
   display: block;
 }
 
-.blog-secoes-nav li.ativo {
+.js .blog-secoes-nav li.ativo {
   background: var(--color-p5);
   color: var(--color-p1);
+}
+
+/* Catálogo */
+
+.js .js-catalogo-lista a {
+  display: none;
+}
+
+.js .js-catalogo-lista a.ativo {
+  display: block;
 }
