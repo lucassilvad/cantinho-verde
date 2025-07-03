@@ -1,11 +1,54 @@
 .filtros-catalogo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   justify-items: center;
   gap: 16px;
   position: relative;
   margin-bottom: 80px;
+}
+
+.filtros-input {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+#tipo {
+  animation: show-up 1s forwards;
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#categoria {
+  display: none;
+}
+
+#categoria.ativo {
+  display: block;
+  animation: show-right 0.8s forwards;
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .filtros-catalogo label {
@@ -36,10 +79,26 @@
   box-shadow: 0 0 2px 2px var(--color-p4);
 }
 
+.filtros-botoes {
+  display: grid;
+  gap: 16px 32px;
+  grid-column: 1 / -1;
+}
+
+.filtros-botoes button:first-child {
+  display: inline-block;
+  background: var(--color-p2);
+  border: 2px solid var(--color-p3);
+  border-radius: 20px;
+}
+
+.filtros-botoes button:first-child:hover {
+  background: var(--color-p3);
+}
+
 .filtros-catalogo button {
   border: none;
   background: none;
-  grid-column: 1 / -1;
   cursor: pointer;
   padding: 8px 12px;
 }
@@ -93,7 +152,23 @@
 }
 
 @media (max-width: 600px) {
-  .filtros-catalogo {
-    grid-template-columns: 1fr;
+  .filtros-input {
+    display: grid;
+    justify-content: stretch;
+  }
+
+  #categoria.ativo {
+    animation: show-down 0.8s forwards;
+  }
+
+  @keyframes show-down {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 30px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
 }

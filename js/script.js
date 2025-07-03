@@ -31,42 +31,62 @@ initSectionChanging();
 
 function initCatalogFilter() {
   const plantas = document.querySelectorAll(".js-catalogo-lista a");
-  const filtrarBtn = document.querySelector(".btn-filtrar");
+  const filtrarBtn = document.querySelector("[data-catalogo='apply']");
+  const resetarBtn = document.querySelector("[data-catalogo='reset']");
+  const tipoInput = document.querySelector("#tipo");
+  const categoriaInput = document.querySelector("#categoria");
 
-  if (plantas.length !== 0 && !!filtrarBtn) {
+  if (plantas.length !== 0 && filtrarBtn) {
     plantas.forEach((planta) => {
       planta.classList.add(activeClass);
     });
 
     function aplicarFiltros() {
-      const tipoPlanta = document.querySelector("#tipo").value;
-      const categoriaPlanta = document.querySelector("#categoria").value;
+      const tipoPlanta = tipoInput.value;
+      const categoriaPlanta = categoriaInput.value;
 
+      const isTipoSelected = tipoPlanta !== "";
+      const isCategoriaSelected = categoriaPlanta !== "";
       console.log(tipoPlanta);
+      console.log(categoriaPlanta);
 
       plantas.forEach((planta) => {
-        const isTipoSelected = tipoPlanta === "";
-        const whichTipoIsSelected = planta.dataset.tipo === tipoPlanta;
-        const whichCategorisIsSelected =
-          planta.dataset.categoria === categoriaPlanta;
-
-        if (isTipoSelected) planta.classList.add(activeClass);
-        else planta.classList.remove(activeClass);
-
-        if (whichTipoIsSelected) planta.classList.add(activeClass);
-        if (categoriaPlanta !== "") planta.classList.remove(activeClass);
-
-        if (whichCategorisIsSelected) planta.classList.add(activeClass);
-      });
-
-      plantas.forEach((planta) => {
-        if (planta.dataset.categoria === tipoPlanta) {
+        if (isTipoSelected) {
+          if (tipoPlanta === planta.dataset.tipo)
+            planta.classList.add(activeClass);
+          else planta.classList.remove(activeClass);
+        } else {
           planta.classList.add(activeClass);
+        }
+
+        if (isCategoriaSelected) {
+          if (categoriaPlanta === planta.dataset.categoria) {
+            planta.classList.add(activeClass);
+          } else {
+            planta.classList.remove(activeClass);
+          }
         }
       });
     }
 
+    function resetarFiltros() {
+      tipoInput.value = "";
+      categoriaInput.value = "";
+      plantas.forEach((planta) => [planta.classList.add(activeClass)]);
+    }
+
+    function handleChange() {
+      if (this.value === "ornamental") {
+        categoriaInput.classList.add(activeClass);
+      } else if (this.value !== "ornamental") {
+        categoriaInput.classList.remove(activeClass);
+        categoriaInput.value = "";
+      }
+    }
+
     filtrarBtn.addEventListener("click", aplicarFiltros);
+    resetarBtn.addEventListener("click", resetarFiltros);
+    tipoInput.addEventListener("change", handleChange);
   }
 }
 initCatalogFilter();

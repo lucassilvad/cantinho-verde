@@ -36,25 +36,28 @@
       <h1 class="font-1-xxl color-p13">Catálogo</h1>
       <div class="catalogo-conteudo">
         <div class="filtros-catalogo">
+          <div class="filtros-input">
+            <label class="font-2-m color-p8" for="tipo">Tipo</label>
+            <select class="font-2-m color-p7" name="tipo" id="tipo">
+              <option value="">Selecione um tipo</option>
+              <option value="ornamental">Ornamental</option>
+              <option value="frutiferas">Frutíferas</option>
+              <option value="hortalicas">Hortaliças</option>
+              <option value="temperos">Temperos</option>
+            </select>
 
-          <label class="font-2-m color-p8" for="tipo">Tipo</label>
-          <select class="font-2-m color-p7" name="tipo" id="tipo">
-            <option value="">Selecione um tipo</option>
-            <option value="ornamental">Ornamental</option>
-            <option value="frutiferas">Frutíferas</option>
-            <option value="hortalicas">Hortaliças</option>
-            <option value="temperos">Temperos</option>
-          </select>
-
-          <label for="categoria">Categoria</label>
-          <select class="font-2-m color-p8" name="categoria" id="categoria">
-            <option value="">Selecione uma categoria</option>
-            <option value="flor">Flor</option>
-            <option value="folhagem">Folhagem</option>
-            <option value="suculenta">Suculenta</option>
-          </select>
-
-          <button class="link btn-filtrar font-1-m">Aplicar filtros</button>
+            <label for="categoria">Categoria</label>
+            <select class="font-2-m color-p8" name="categoria" id="categoria">
+              <option value="">Selecione uma categoria</option>
+              <option value="flor">Flor</option>
+              <option value="folhagem">Folhagem</option>
+              <option value="suculenta">Suculenta</option>
+            </select>
+          </div>
+          <div class="filtros-botoes">
+            <button data-catalogo="apply" class="btn-filtrar font-1-m color-p9">Aplicar filtros</button>
+            <button data-catalogo="reset" class="link btn-filtrar font-1-m color-p13">Resetar filtros</button>
+          </div>
         </div>
         <ul class="js-catalogo-lista">
           <a data-tipo="ornamental" data-categoria="flor" href="./orcamento.html">
